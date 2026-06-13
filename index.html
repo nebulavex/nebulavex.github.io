@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The personal operating system of Wasee Faiyaz Jamim.">
+  <title>Jamim — Developer, Founder, Builder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loader" class="loader">
+    <div class="boot-mark">J</div>
+    <div id="boot-lines" class="boot-lines"></div>
+  </div>
+
+  <div class="ambient" aria-hidden="true">
+    <div class="aurora a1"></div><div class="aurora a2"></div><div class="grid"></div>
+    <div id="mouse-glow" class="mouse-glow"></div><div id="particles"></div><div class="noise"></div>
+  </div>
+  <div id="cursor" class="cursor"></div><div id="cursor-dot" class="cursor-dot"></div>
+  <div id="toast" class="toast"></div>
+
+  <button id="palette-trigger" class="palette-trigger" aria-label="Open command menu">
+    <span class="icon">⌘</span><span>Command menu</span><kbd>⌘ K</kbd>
+  </button>
+
+  <nav class="dock" aria-label="Main navigation">
+    <button data-go="home" aria-label="Home"><span class="dock-icon">⌂</span><small>Home</small></button>
+    <button data-go="about" aria-label="About"><span class="dock-icon">◎</span><small>About</small></button>
+    <button data-go="projects" aria-label="Projects"><span class="dock-icon">◇</span><small>Projects</small></button>
+    <button data-go="skills" aria-label="Skills"><span class="dock-icon">⌬</span><small>Skills</small></button>
+    <button data-go="contact" aria-label="Contact"><span class="dock-icon">↗</span><small>Contact</small></button>
+  </nav>
+
+  <div id="palette-wrap" class="palette-wrap" hidden>
+    <div class="palette">
+      <div class="palette-search"><span>⌕</span><input id="palette-input" placeholder="Where do you want to go?" autocomplete="off"><kbd>ESC</kbd></div>
+      <span class="palette-label">QUICK NAVIGATION</span>
+      <div id="palette-actions"></div>
+    </div>
+  </div>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-copy">
+        <div class="status-pill reveal"><i></i> Currently building something ambitious <span>→</span></div>
+        <p class="kicker reveal">DEVELOPER <b>•</b> FOUNDER <b>•</b> BUILDER</p>
+        <h1 class="reveal">Wasee Faiyaz<br><em>Jamim.</em></h1>
+        <div class="role reveal">I'm a <strong id="typed-role">Full Stack Developer</strong></div>
+        <p class="hero-desc reveal">I turn late-night ideas into polished products, open-source tools, and digital systems that are built to matter.</p>
+        <div class="hero-actions reveal"><button class="primary magnetic" data-go="projects">Explore my work <span>→</span></button><a class="magnetic" href="https://github.com/nebulavex" target="_blank" rel="noopener">◉ GitHub</a></div>
+      </div>
+      <div class="hero-visual reveal">
+        <div id="avatar-stage" class="avatar-stage">
+          <div class="avatar-orbit o1"></div><div class="avatar-orbit o2"></div>
+          <div id="avatar" class="avatar"><img src="https://i.ibb.co.com/LDxKD2h5/Chat-GPT-Image-Jun-10-2026-12-45-20-AM.png" alt="Wasee Faiyaz Jamim"><span></span></div>
+          <div class="float-chip c1">&lt;/&gt; shipping</div><div class="float-chip c2">● online</div>
+        </div>
+      </div>
+      <div class="scroll-hint"><span>SCROLL TO ENTER</span><i></i></div>
+    </section>
+
+    <section id="about" class="section">
+      <header class="section-head reveal"><span class="eyebrow">✦ THE OPERATOR</span><h2>Not waiting for the future.<br><em>Building it.</em></h2></header>
+      <div class="about-grid">
+        <div class="manifesto reveal"><p>Young enough to question the rules.<br>Experienced enough to ship without them.</p><span>I'm Jamim, a product-minded full-stack developer obsessed with turning complex problems into simple, beautiful systems.</span></div>
+        <div class="metrics reveal"><div><strong>01</strong><span>Builder<br>mindset</span></div><div><strong>24/7</strong><span>Curiosity<br>online</span></div><div><strong>∞</strong><span>Ideas in<br>the queue</span></div></div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <header class="section-head reveal"><span class="eyebrow">⚡ SELECTED BUILDS</span><h2>Ideas, turned real.</h2><p>Products and ecosystems that represent the systems, design quality, and direction behind my work.</p></header>
+      <div class="projects-grid">
+        <article class="project-card reveal" data-url="https://vaultrix.shop" style="--accent:#38bdf8"><div class="card-top"><span>01 / DIGITAL COMMERCE</span><b>V</b></div><div class="card-art"><i></i><i></i><i></i></div><div><span class="tag">REAL PROJECT</span><h3>Vaultrix Marketplace</h3><p>Digital marketplace platform built from scratch with focus on scalability, automation, and modern UX.</p></div><div class="card-actions"><a href="https://vaultrix.shop" target="_blank" rel="noopener">Visit Project ↗</a><a href="https://vaultrix.shop" target="_blank" rel="noopener">Open Website</a></div></article>
+        <article class="project-card reveal" data-url="https://discord.com" style="--accent:#8b5cf6"><div class="card-top"><span>02 / AUTOMATION</span><b>D</b></div><div class="card-art"><i></i><i></i><i></i></div><div><span class="tag">ECOSYSTEM SHOWCASE</span><h3>Discord Commerce System</h3><p>A complete digital goods ecosystem with product management, balances, automated delivery, and administration.</p></div><div class="card-actions"><a href="https://discord.com" target="_blank" rel="noopener">Visit Website ↗</a><a href="https://discord.com/developers/docs/intro" target="_blank" rel="noopener">Learn More</a></div></article>
+        <article class="project-card reveal" data-url="https://ubuntu.com" style="--accent:#60a5fa"><div class="card-top"><span>03 / OPEN SOURCE</span><b>L</b></div><div class="card-art"><i></i><i></i><i></i></div><div><span class="tag">LINUX SHOWCASE</span><h3>Linux Customization Suite</h3><p>Desktop customizations, themes, workflow improvements, and performance optimizations for Linux power users.</p></div><div class="card-actions"><a href="https://ubuntu.com" target="_blank" rel="noopener">Visit Website ↗</a><a href="https://github.com/topics/linux-customization" target="_blank" rel="noopener">Learn More</a></div></article>
+        <article class="project-card reveal" data-url="https://github.com" style="--accent:#a855f7"><div class="card-top"><span>04 / TOOLING</span><b>&lt;/&gt;</b></div><div class="card-art"><i></i><i></i><i></i></div><div><span class="tag">DEVELOPER ECOSYSTEM</span><h3>Developer Utilities</h3><p>A collection of productivity tools, automation systems, and developer-focused utilities built to remove friction.</p></div><div class="card-actions"><a href="https://github.com" target="_blank" rel="noopener">Visit Website ↗</a><a href="https://github.com/explore" target="_blank" rel="noopener">Learn More</a></div></article>
+        <article class="project-card reveal" data-url="https://openai.com" style="--accent:#38bdf8"><div class="card-top"><span>05 / ARTIFICIAL INTELLIGENCE</span><b>AI</b></div><div class="card-art"><i></i><i></i><i></i></div><div><span class="tag">AI SHOWCASE</span><h3>AI Integrations Hub</h3><p>Experiments and integrations using modern AI APIs, agentic workflows, and intelligent automation.</p></div><div class="card-actions"><a href="https://openai.com" target="_blank" rel="noopener">Visit Website ↗</a><a href="https://platform.openai.com/docs" target="_blank" rel="noopener">Learn More</a></div></article>
+        <article class="project-card reveal" data-url="https://vercel.com" style="--accent:#8b5cf6"><div class="card-top"><span>06 / STARTUP EXPERIMENTS</span><b>▲</b></div><div class="card-art"><i></i><i></i><i></i></div><div><span class="tag">PRODUCT SHOWCASE</span><h3>Portfolio Ecosystem</h3><p>Personal projects, landing pages, dashboards, and startup experiments designed and shipped at speed.</p></div><div class="card-actions"><a href="https://vercel.com" target="_blank" rel="noopener">Visit Website ↗</a><a href="https://vercel.com/templates" target="_blank" rel="noopener">Learn More</a></div></article>
+      </div>
+    </section>
+
+    <section class="tech-section"><div class="marquee"><div id="marquee-content"></div></div><p>TECHNOLOGIES EXPLORED / SYSTEMS THAT INSPIRE</p></section>
+
+    <section id="skills" class="section">
+      <header class="section-head reveal"><span class="eyebrow">⌬ CAPABILITY GRAPH</span><h2>A connected toolkit.</h2><p>Skills are more useful as a system than a list.</p></header>
+      <div class="skill-map reveal"><div class="skill-core"><b>&lt;/&gt;</b><strong>JAMIM</strong><span>BUILDER</span></div><svg><line x1="50%" y1="50%" x2="17%" y2="34%"/><line x1="50%" y1="50%" x2="45%" y2="18%"/><line x1="50%" y1="50%" x2="75%" y2="28%"/><line x1="50%" y1="50%" x2="27%" y2="75%"/><line x1="50%" y1="50%" x2="55%" y2="67%"/><line x1="50%" y1="50%" x2="80%" y2="75%"/></svg><div class="skill-node n1"><strong>Frontend</strong><span>React · Next.js · TypeScript · Motion</span></div><div class="skill-node n2"><strong>Backend</strong><span>Node.js · APIs · Auth · Systems</span></div><div class="skill-node n3"><strong>DevOps</strong><span>Docker · CI/CD · Cloudflare</span></div><div class="skill-node n4"><strong>Linux</strong><span>Arch · Shell · Ricing</span></div><div class="skill-node n5"><strong>Databases</strong><span>PostgreSQL · Supabase</span></div><div class="skill-node n6"><strong>AI + Cloud</strong><span>OpenAI · Vercel · Agents</span></div></div>
+    </section>
+
+    <section id="github" class="section">
+      <header class="section-head reveal"><span class="eyebrow">◉ OPEN SOURCE SIGNAL</span><h2>Building in public.</h2><p>Experiments, utilities, systems, and a steady stream of commits.</p></header>
+      <div class="github-panel reveal"><div class="gh-profile"><div class="gh-icon">◉</div><div><span>@nebulavex</span><strong>Code is the proof of work.</strong></div><a href="https://github.com/nebulavex" target="_blank" rel="noopener">View profile →</a></div><div class="gh-stats"><div><strong id="repo-count">28</strong><span>public repositories</span></div><div><strong id="follower-count">12</strong><span>GitHub followers</span></div><div><strong>∞</strong><span>ideas queued</span></div></div><div class="contrib"><div class="contrib-label"><span>Contribution frequency</span><span>Less &nbsp; More</span></div><div id="contrib-grid" class="contrib-grid"></div></div></div>
+    </section>
+
+    <section class="section">
+      <header class="section-head reveal"><span class="eyebrow">▣ DIRECT ACCESS</span><h2>Talk to the system.</h2></header>
+      <div class="terminal reveal"><div class="terminal-bar"><span class="red"></span><span class="yellow"></span><span class="green"></span><b>jamim@portfolio — zsh</b><i>⌘</i></div><div id="terminal-body" class="terminal-body"><p>jamim.os v2.6 — type 'help' to explore.</p><form id="terminal-form"><span>❯</span><input id="terminal-input" autocomplete="off" spellcheck="false" aria-label="Terminal input"></form></div></div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="contact-glow"></div><span class="eyebrow reveal">● AVAILABLE FOR AMBITIOUS IDEAS</span><h2 class="reveal">Let's build what<br>comes <em>next.</em></h2><p class="reveal">Have a product idea, an interesting problem, or just want to talk tech?</p><a class="primary big magnetic reveal" href="mailto:onlyjamim@gmail.com">Start a conversation ↗</a>
+      <div class="contact-cards reveal"><button data-copy="onlyjamim@gmail.com"><b>✉</b><span><small>EMAIL</small>onlyjamim@gmail.com</span><i>⧉</i></button><a href="https://github.com/nebulavex" target="_blank" rel="noopener"><b>◉</b><span><small>GITHUB</small>@nebulavex</span><i>↗</i></a><button data-copy="@1wfj"><b>◌</b><span><small>DISCORD</small>@1wfj</span><i>⧉</i></button></div>
+    </section>
+  </main>
+  <footer><div><span class="logo">J.</span><span>Designed & engineered by Jamim.<br>Built after midnight.</span></div><span>© 2026 JAMIM.ME</span><button data-go="home">BACK TO TOP ↑</button></footer>
+  <script src="script.js"></script>
+</body>
+</html>
